@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1e0068bc-831b-40ab-92b1-ec2096e81a3b" name="Default Changelist" comment="1">
+      <change beforePath="$PROJECT_DIR$/305-lambda-interpreter/src/main/java/cn/seecoder/Identifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/305-lambda-interpreter/src/main/java/cn/seecoder/Identifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/305-lambda-interpreter/src/main/java/cn/seecoder/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/305-lambda-interpreter/src/main/java/cn/seecoder/Interpreter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/305-lambda-interpreter/src/main/java/cn/seecoder/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/305-lambda-interpreter/src/main/java/cn/seecoder/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/305-lambda-interpreter/src/test/java/cn/seecoder/InterpreterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/305-lambda-interpreter/src/test/java/cn/seecoder/InterpreterTest.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/305-lambda-interpreter/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/305-lambda-interpreter/src/main/java/cn/seecoder/Lexer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1463">
+              <caret line="77" column="20" lean-forward="true" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/305-lambda-interpreter/src/main/java/cn/seecoder/Identifier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/305-lambda-interpreter/src/main/java/cn/seecoder/AST.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/305-lambda-interpreter/src/main/java/cn/seecoder/Interpreter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3648">
+              <caret line="222" column="58" selection-start-line="222" selection-start-column="58" selection-end-line="222" selection-end-column="58" />
+              <folding>
+                <element signature="e#307#308#0" expanded="true" />
+                <element signature="e#356#357#0" expanded="true" />
+                <element signature="e#401#402#0" expanded="true" />
+                <element signature="e#450#451#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/305-lambda-interpreter/src/test/java/cn/seecoder/InterpreterTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-665">
+              <caret line="191" column="55" selection-start-line="191" selection-start-column="55" selection-end-line="191" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/305-lambda-interpreter/src/main/java/cn/seecoder/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/305-lambda-interpreter/src/main/java/cn/seecoder/Abstraction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Java/jdk1.8.0_202/src.zip!/java/lang/String.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="14687">
+              <caret line="826" selection-start-line="826" selection-end-line="826" />
+              <folding>
+                <element signature="e#22786#22787#0" expanded="true" />
+                <element signature="e#22821#22822#0" expanded="true" />
+                <element signature="e#82616#82617#0" expanded="true" />
+                <element signature="e#82667#82668#0" expanded="true" />
+                <element signature="e#117893#117894#0" expanded="true" />
+                <element signature="e#117955#117956#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Java/jdk1.8.0_202/src.zip!/java/lang/Enum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1881">
+              <caret line="130" selection-start-line="130" selection-end-line="130" />
+              <folding>
+                <element signature="e#4032#4033#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/305-lambda-interpreter/src/main/java/cn/seecoder/Parser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="608">
+              <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+              <folding>
+                <element signature="e#118#119#0" expanded="true" />
+                <element signature="e#143#144#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/305-lambda-interpreter/src/test/java/cn/seecoder/InterpreterTest.java" />
+        <option value="$PROJECT_DIR$/305-lambda-interpreter/src/main/java/cn/seecoder/Abstraction.java" />
+        <option value="$PROJECT_DIR$/305-lambda-interpreter/src/main/java/cn/seecoder/Application.java" />
+        <option value="$PROJECT_DIR$/305-lambda-interpreter/src/main/java/cn/seecoder/Identifier.java" />
+        <option value="$PROJECT_DIR$/305-lambda-interpreter/src/main/java/cn/seecoder/Interpreter.java" />
+        <option value="$PROJECT_DIR$/305-lambda-interpreter/src/main/java/cn/seecoder/Parser.java" />
+        <option value="$PROJECT_DIR$/305-lambda-interpreter/src/main/java/cn/seecoder/Lexer.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="102" />
+    <option name="y" value="30" />
+    <option name="width" value="2100" />
+    <option name="height" value="1320" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="5d53c1faa7694bf086554319bfd9bf2f" type="b2602c69:ProjectViewProjectNode" />
+              <item name="305-lambda-interpreter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="5d53c1faa7694bf086554319bfd9bf2f" type="b2602c69:ProjectViewProjectNode" />
+              <item name="305-lambda-interpreter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="5d53c1faa7694bf086554319bfd9bf2f" type="b2602c69:ProjectViewProjectNode" />
+              <item name="305-lambda-interpreter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="5d53c1faa7694bf086554319bfd9bf2f" type="b2602c69:ProjectViewProjectNode" />
+              <item name="305-lambda-interpreter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="5d53c1faa7694bf086554319bfd9bf2f" type="b2602c69:ProjectViewProjectNode" />
+              <item name="305-lambda-interpreter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="seecoder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="5d53c1faa7694bf086554319bfd9bf2f" type="b2602c69:ProjectViewProjectNode" />
+              <item name="305-lambda-interpreter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="5d53c1faa7694bf086554319bfd9bf2f" type="b2602c69:ProjectViewProjectNode" />
+              <item name="305-lambda-interpreter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="5d53c1faa7694bf086554319bfd9bf2f" type="b2602c69:ProjectViewProjectNode" />
+              <item name="305-lambda-interpreter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="seecoder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="5d53c1faa7694bf086554319bfd9bf2f" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561017532661" />
+    <property name="last_opened_file_path" value="C:/大一下/软件工程与计算1/作业/大作业/LambdaInterpreter-master" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.34712642" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.InterpreterTest.test8_PRED_testInterpreter">
+    <configuration name="InterpreterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LambdaInterpreter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.seecoder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.seecoder" />
+      <option name="MAIN_CLASS_NAME" value="cn.seecoder.InterpreterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InterpreterTest.test0_ZERO_testLexer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LambdaInterpreter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.seecoder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.seecoder" />
+      <option name="MAIN_CLASS_NAME" value="cn.seecoder.InterpreterTest" />
+      <option name="METHOD_NAME" value="test0_ZERO_testLexer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InterpreterTest.test4_PLUS_testParser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LambdaInterpreter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.seecoder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.seecoder" />
+      <option name="MAIN_CLASS_NAME" value="cn.seecoder.InterpreterTest" />
+      <option name="METHOD_NAME" value="test4_PLUS_testParser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InterpreterTest.test6_POW_testLexer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LambdaInterpreter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.seecoder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.seecoder" />
+      <option name="MAIN_CLASS_NAME" value="cn.seecoder.InterpreterTest" />
+      <option name="METHOD_NAME" value="test6_POW_testLexer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InterpreterTest.test8_PRED_testInterpreter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LambdaInterpreter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.seecoder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.seecoder" />
+      <option name="MAIN_CLASS_NAME" value="cn.seecoder.InterpreterTest" />
+      <option name="METHOD_NAME" value="test8_PRED_testInterpreter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.InterpreterTest.test8_PRED_testInterpreter" />
+        <item itemvalue="JUnit.InterpreterTest.test6_POW_testLexer" />
+        <item itemvalue="JUnit.InterpreterTest.test4_PLUS_testParser" />
+        <item itemvalue="JUnit.InterpreterTest" />
+        <item itemvalue="JUnit.InterpreterTest.test0_ZERO_testLexer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1e0068bc-831b-40ab-92b1-ec2096e81a3b" name="Default Changelist" comment="" />
+      <created>1559996600216</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559996600216</updated>
+      <workItem from="1559996601717" duration="308000" />
+      <workItem from="1559996917975" duration="2512000" />
+      <workItem from="1560042219336" duration="204000" />
+      <workItem from="1560042427507" duration="981000" />
+      <workItem from="1560043412849" duration="540000" />
+      <workItem from="1560046413711" duration="877000" />
+      <workItem from="1560047296882" duration="685000" />
+      <workItem from="1560047987522" duration="100000" />
+      <workItem from="1560048094001" duration="2483000" />
+      <workItem from="1560050584392" duration="2380000" />
+      <workItem from="1560053792966" duration="6015000" />
+      <workItem from="1560078426083" duration="15000" />
+      <workItem from="1560167208602" duration="16482000" />
+      <workItem from="1560476996236" duration="3159000" />
+      <workItem from="1560503380463" duration="2382000" />
+      <workItem from="1560762343095" duration="73000" />
+      <workItem from="1560762487444" duration="2425000" />
+      <workItem from="1560855520877" duration="6559000" />
+      <workItem from="1560936216106" duration="7162000" />
+      <workItem from="1560959325193" duration="128000" />
+      <workItem from="1560994292445" duration="13610000" />
+      <workItem from="1561017839904" duration="1824000" />
+    </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1560505743531</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1560505743532</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1">
+      <created>1560859214679</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1560859214679</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1">
+      <created>1560939081425</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1560939081426</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1">
+      <created>1560959396178</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1560959396178</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="InterpreterTest - 2019.06.19 at 18h 10m 34s.xml">
+      <configuration name="InterpreterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InterpreterTest - 2019.06.19 at 18h 23m 06s.xml">
+      <configuration name="InterpreterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InterpreterTest - 2019.06.19 at 23h 49m 18s.xml">
+      <configuration name="InterpreterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InterpreterTest - 2019.06.20 at 09h 57m 47s.xml">
+      <configuration name="InterpreterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InterpreterTest_test0_ZERO_testLexer - 2019.06.20 at 10h 53m 58s.xml">
+      <configuration name="InterpreterTest.test0_ZERO_testLexer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InterpreterTest - 2019.06.20 at 11h 12m 04s.xml">
+      <configuration name="InterpreterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InterpreterTest - 2019.06.20 at 11h 12m 25s.xml">
+      <configuration name="InterpreterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InterpreterTest_test4_PLUS_testParser - 2019.06.20 at 15h 18m 04s.xml">
+      <configuration name="InterpreterTest.test4_PLUS_testParser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InterpreterTest_test6_POW_testLexer - 2019.06.20 at 15h 18m 14s.xml">
+      <configuration name="InterpreterTest.test6_POW_testLexer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InterpreterTest_test8_PRED_testInterpreter - 2019.06.20 at 15h 18m 24s.xml">
+      <configuration name="InterpreterTest.test8_PRED_testInterpreter" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="70904000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1551" height="935" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26657736" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32876712" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39975095" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32876712" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.32953784" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/305-lambda-interpreter/src/main/java/cn/seecoder/Interpreter.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/305-lambda-interpreter/src/main/java/cn/seecoder/Interpreter.java</url>
+          <line>222</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/305-lambda-interpreter/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/305-lambda-interpreter/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="855">
+            <caret line="45" selection-start-line="45" selection-end-line="45" selection-end-column="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/305-lambda-interpreter/src/main/java/cn/seecoder/TokenType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_202/src.zip!/java/lang/Character.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="4817" selection-start-line="4817" selection-end-line="4817" />
+          <folding>
+            <element signature="e#160116#160117#0" expanded="true" />
+            <element signature="e#160186#160187#0" expanded="true" />
+            <element signature="e#161873#161874#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_202/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_202/src.zip!/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="1251" selection-start-line="1251" selection-end-line="1251" />
+          <folding>
+            <element signature="e#49082#49083#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_202/src.zip!/java/util/regex/ASCII.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="202" selection-start-line="202" selection-end-line="202" />
+          <folding>
+            <element signature="e#7171#7172#0" expanded="true" />
+            <element signature="e#7234#7235#0" expanded="true" />
+            <element signature="e#7329#7330#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_202/src.zip!/java/util/regex/Matcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="603" selection-start-line="603" selection-end-line="603" />
+          <folding>
+            <element signature="e#21636#21637#0" expanded="true" />
+            <element signature="e#48854#48855#0" expanded="true" />
+            <element signature="e#48890#48891#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_202/src.zip!/java/util/regex/Pattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="1134" selection-start-line="1134" selection-end-line="1134" />
+          <folding>
+            <element signature="e#48487#48488#0" expanded="true" />
+            <element signature="e#48531#48532#0" expanded="true" />
+            <element signature="e#75989#75990#0" expanded="true" />
+            <element signature="e#76020#76021#0" expanded="true" />
+            <element signature="e#76520#76521#0" expanded="true" />
+            <element signature="e#76559#76560#0" expanded="true" />
+            <element signature="e#79991#79992#0" expanded="true" />
+            <element signature="e#80015#80016#0" expanded="true" />
+            <element signature="e#128742#128743#0" expanded="true" />
+            <element signature="e#128787#128788#0" expanded="true" />
+            <element signature="e#146015#146016#0" expanded="true" />
+            <element signature="e#146081#146082#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_202/src.zip!/java/io/PrintStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9348">
+          <caret line="525" selection-start-line="525" selection-end-line="525" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_202/src.zip!/java/io/Writer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2508">
+          <caret line="157" selection-start-line="157" selection-end-line="157" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_202/src.zip!/java/io/BufferedWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1881">
+          <caret line="124" selection-start-line="124" selection-end-line="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/305-lambda-interpreter/src/main/java/cn/seecoder/AST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/305-lambda-interpreter/src/main/java/cn/seecoder/Abstraction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_202/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14687">
+          <caret line="826" selection-start-line="826" selection-end-line="826" />
+          <folding>
+            <element signature="e#22786#22787#0" expanded="true" />
+            <element signature="e#22821#22822#0" expanded="true" />
+            <element signature="e#82616#82617#0" expanded="true" />
+            <element signature="e#82667#82668#0" expanded="true" />
+            <element signature="e#117893#117894#0" expanded="true" />
+            <element signature="e#117955#117956#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_202/src.zip!/java/lang/Enum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1881">
+          <caret line="130" selection-start-line="130" selection-end-line="130" />
+          <folding>
+            <element signature="e#4032#4033#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/305-lambda-interpreter/src/test/java/cn/seecoder/InterpreterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-665">
+          <caret line="191" column="55" selection-start-line="191" selection-start-column="55" selection-end-line="191" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/305-lambda-interpreter/src/main/java/cn/seecoder/Lexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1463">
+          <caret line="77" column="20" lean-forward="true" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/305-lambda-interpreter/src/main/java/cn/seecoder/Interpreter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3648">
+          <caret line="222" column="58" selection-start-line="222" selection-start-column="58" selection-end-line="222" selection-end-column="58" />
+          <folding>
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#401#402#0" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/305-lambda-interpreter/src/main/java/cn/seecoder/Identifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/305-lambda-interpreter/src/main/java/cn/seecoder/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/305-lambda-interpreter/src/main/java/cn/seecoder/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+          <folding>
+            <element signature="e#118#119#0" expanded="true" />
+            <element signature="e#143#144#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.34712642" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.34712642" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>LambdaInterpreter</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.34712642" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: org.hamcrest:hamcrest-core:1.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.34712642" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
